@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <div class="input-container">
+        <input type="text" id="item-input" placeholder="Adicionar item">
+        <input type="number" id="price-input" placeholder="Preço">
+        <input type="number" id="qtd-input" placeholder="Qtd">
+        </div>
+        
+        <button class="btn-primary" id="add-item">Adicionar</button>
+        <ul id="shopping-list"></ul>
+        <h2>Histórico de Compras</h2>
+        <h3 id="date-today"></h3>
+        <!-- <ul id="history-list"></ul> -->
+        <!-- <button class="btn-primary" id="clear-history">Limpar Histórico</button> -->
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>Quantidade</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="history-list"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total da Compra</td>
+                    <td id="total-sum">R$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button class="btn-primary" id="clear-history">Apagar Histórico  <i class="fas fa-trash"></i></button>
+        <button class="btn-primary" id="generate-report">Gerar Relatório <i class="fas fa-save"></i></button>
+    </div>
+    
+    <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
